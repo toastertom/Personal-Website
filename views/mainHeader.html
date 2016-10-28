@@ -1,5 +1,7 @@
-<div>
-  <ul ng-repeat="item in navItems">
-    <li><ahref="{{item.hash}}">{{item.name}}</a></li>
-  </ul>
-</div>
+<header class="main-header">
+  <div id="navbar">
+    <ul>
+      <li ng-repeat="item in navItems"><a href="{{item.hash}}">{{item.name}}</a></li>
+    </ul>
+  </div>
+</header>
