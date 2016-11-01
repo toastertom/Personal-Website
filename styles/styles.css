@@ -3,7 +3,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  height: 800px;
+  height: 10000px;
 }
 /*Navbar*/
 .main-header{
@@ -56,6 +56,7 @@ a {
   background-size: cover;
 }
 .container {
+  height: auto;
   width: 100%;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -71,7 +72,54 @@ a {
   text-align: center;
 }
 svg {
-height: auto;
-width: 200px;
+height: 100px;
+width: 100px;
 margin: 20px 20px;
+}
+
+#portfolio {
+  background-image: url("../images/designa.jpg");
+  background-size: cover;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#portfolio h1{
+  margin: 0;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.project-container{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+
+}
+
+#twitterclone {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  margin: 20px;
+  margin-top: 70px;
+}
+
+#marvelarchive {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  margin: 20px;
+  margin-top: 70px;
+}
+
+#marsbags {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  margin: 20px;
+  margin-top: 70px;
 }
