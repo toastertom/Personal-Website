@@ -4,7 +4,7 @@ app.directive('mainHeader', function
 () {
   return {
     restrict: 'E',
-    templateUrl: '../../views/mainHeader.html',
+    templateUrl: 'views/mainHeader.html',
     transclude: true,
     link: function () {
 
