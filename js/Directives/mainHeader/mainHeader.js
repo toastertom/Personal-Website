@@ -6,9 +6,6 @@ app.directive('mainHeader', function
     restrict: 'E',
     templateUrl: 'js/Directives/mainHeader/views/mainHeader.html',
     transclude: true,
-    link: function () {
-
-    },
     controller: function ($scope) {
       $scope.navItems = [
         {
@@ -31,3 +28,19 @@ app.directive('mainHeader', function
     }
   }
 })
+
+app = angular.module('profile');
+app.directive("scroll", function ($window) {
+    return function(scope, element, attrs) {
+        angular.element($window).bind("scroll", function() {
+             if (this.pageYOffset >= 400) {
+                element.addClass('no-shadow');
+              }
+              // Looks good once changed so no revert. 
+            //   else {
+            //      scope.boolChangeClass = false;
+            //  }
+
+        });
+    };
+});
