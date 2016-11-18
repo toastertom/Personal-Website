@@ -120,18 +120,28 @@ margin: 15px 15px;
 
 /*Portfolio Section*/
 #portfolio {
-  background-image: url("../images/designa.JPG");
+  background-image: url("../images/fence1.jpg");
   background-size: cover;
   padding-top: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#portfolio h1{
+/*#portfolio div{
   margin: 0;
   margin-top: 30px;
-  width: 100px;
-  background-color: #fff;
-}
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}*/
+/*#portfolio h1{
+  width: 150px;
+  padding: 5px;
+  color: #fff;
+}*/
 
 .project-container{
   height: 400px;
@@ -140,15 +150,17 @@ margin: 15px 15px;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-
+  z-index: 999;
 }
 
 img.project-box {
-  width: 540px;
-  height: 350px;
+  width: 300px;
+  height: 280px;
   margin: 20px;
-  background: cover;
+  background-size: cover;
+ box-shadow: 10px 10px 5px rgba(0,0,0, 0.2);
 }
+
 
 #twitterclone {
   background-color: red;
@@ -172,7 +184,7 @@ footer {
 }
 
 footer h1 {
-  font-size: 60px;
+  font-size: 40px;
   margin-top: 0px;
 }
 
