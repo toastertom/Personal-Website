@@ -3,7 +3,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  height: 10000px;
+  height: auto;
 }
 
 /*Navbar*/
@@ -37,6 +37,12 @@ li{
 a {
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-height: 600px) {
+  #navbar {
+    background-color: #fff;
+  }
 }
 
 /*Main*/
@@ -80,8 +86,8 @@ a {
 
 #img-circle {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
 }
 
 h1 {
@@ -123,7 +129,8 @@ margin: 15px 15px;
 #portfolio h1{
   margin: 0;
   margin-top: 30px;
-  width: 100%;
+  width: 100px;
+  background-color: #fff;
 }
 
 .project-container{
@@ -136,32 +143,41 @@ margin: 15px 15px;
 
 }
 
-#twitterclone {
-  width: 250px;
-  height: 250px;
-  background-color: red;
+img.project-box {
+  width: 540px;
+  height: 350px;
   margin: 20px;
-  margin-top: 70px;
+  background: cover;
+}
+
+#twitterclone {
+  background-color: red;
+
 }
 
 #marvelarchive {
-  width: 250px;
-  height: 250px;
-  background-color: red;
-  margin: 20px;
-  margin-top: 70px;
+
+
 }
 
 #marsbags {
-  width: 250px;
-  height: 250px;
   background-color: red;
-  margin: 20px;
-  margin-top: 70px;
+
 }
 
 /*Footer Section*/
 
 footer {
   text-align: center;
+}
+
+footer h1 {
+  font-size: 60px;
+  margin-top: 0px;
+}
+
+.social-links {
+  height: 70px;
+  width: 70px;
+  margin: 10px;
 }
