@@ -35,11 +35,9 @@ app.directive("scroll", function ($window) {
         angular.element($window).bind("scroll", function() {
              if (this.pageYOffset >= 400) {
                 element.addClass('no-shadow');
-              }
-              // Looks good once changed so no revert. 
-            //   else {
-            //      scope.boolChangeClass = false;
-            //  }
+              }else {
+                element.removeClass('no-shadow');
+             }
 
         });
     };
