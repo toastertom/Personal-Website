@@ -3,7 +3,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  height: 10000px;
+  height: auto;
 }
 
 /*Navbar*/
@@ -15,6 +15,12 @@ body {
   left: 0;
   z-index: 9999;
 }
+/*Directive*/
+.no-shadow {
+  background:rgba(0,0,0, 0.4);
+  box-shadow: none;
+}
+
 #navbar {
   text-align: center;
   background:rgba(0,0,0, 0.4);
@@ -37,6 +43,10 @@ li{
 a {
   color: #fff;
   text-decoration: none;
+}
+
+a:hover {
+  color: #F1652A;
 }
 
 /*Main*/
@@ -68,31 +78,76 @@ a {
   text-align: center;
   font-weight: thin;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-div {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#img-circle {
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+p {
+  width: 340px;
+  text-align: left;
+  margin-left: 20px;
 }
 
 /*Skills Section*/
 #skills {
   text-align: center;
 }
-svg {
-height: 100px;
-width: 100px;
+.svg {
+height: 120px;
+width: 120px;
 margin: 20px 20px;
+}
+
+.svg-2 {
+height: 150px;
+width: 150px;
+margin: 15px 15px;
 }
 
 /*Portfolio Section*/
 #portfolio {
-  background-image: url("../images/designa.jpg");
+  background-image: url("../images/fence1.jpg");
   background-size: cover;
   padding-top: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#portfolio h1{
+/*#portfolio div{
   margin: 0;
   margin-top: 30px;
   width: 100%;
-}
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}*/
+/*#portfolio h1{
+  width: 150px;
+  padding: 5px;
+  color: #fff;
+}*/
 
 .project-container{
   height: 400px;
@@ -101,35 +156,50 @@ margin: 20px 20px;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-
+  z-index: 999;
 }
 
-#twitterclone {
-  width: 250px;
-  height: 250px;
-  background-color: red;
+img.project-box {
+  width: 300px;
+  height: 280px;
   margin: 20px;
-  margin-top: 70px;
+  background-size: cover;
+ box-shadow: 10px 10px 5px rgba(0,0,0, 0.2);
+}
+
+
+#twitterclone {
+  background-color: red;
+
 }
 
 #marvelarchive {
-  width: 250px;
-  height: 250px;
-  background-color: red;
-  margin: 20px;
-  margin-top: 70px;
+
+
 }
 
 #marsbags {
-  width: 250px;
-  height: 250px;
   background-color: red;
-  margin: 20px;
-  margin-top: 70px;
+
 }
 
 /*Footer Section*/
 
 footer {
   text-align: center;
+}
+
+footer h1 {
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+footer div {
+  margin-top: 30px;
+}
+
+.social-links {
+  height: 70px;
+  width: 70px;
+  margin: 10px;
 }
